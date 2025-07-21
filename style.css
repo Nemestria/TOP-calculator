@@ -26,16 +26,63 @@ h1 {
 }
 
 header {
-width: 75%;
-padding: 15px;
-font-weight: bold;
-color: var(--green);
-background-color: var(--pink);
-border: 4px solid #000;
-position: relative;
-overflow: hidden;
-border-radius: 0;
-outline: none;
-transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-box-shadow: 5px 5px 0 #000, 10px 10px 0 var(--pink);
+    width: 75%;
+    padding: 15px;
+    font-weight: bold;
+    color: var(--green);
+    background-color: var(--pink);
+    border: 4px solid #000;
+    position: relative;
+    overflow: hidden;
+    border-radius: 0;
+    outline: none;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    box-shadow: 5px 5px 0 #000, 10px 10px 0 var(--pink);
+}
+
+.calculator{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.display{
+    padding: 24px;
+    border: 4px solid #000;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    width: 480px;
+    justify-content: space-around;
+}
+
+.keypad{
+    padding: 24px;
+    border: 4px solid #000;
+    width: 75%;
+    margin: 24px;
+    display: flex;
+    flex-direction: column;
+    width: 480px;
+    aspect-ratio: 1;
+    justify-content: space-around;
+}
+
+.keyrow{
+    display: flex;
+    gap: 12px;
+    min-height: 70px;
+
+}
+
+.key{
+    flex: 1;
+    background-color: var(--pink);
+    border: 2px solid #000;
+    box-shadow: 2px 2px 0 #000, 4px 4px 0 var(--pink);
+    font-family: 'ClashDisplay-Variable';
+    font-size: 32px;
+    font-weight: 500    ;
+
 }
